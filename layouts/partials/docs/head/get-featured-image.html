@@ -21,6 +21,7 @@
         "lineSpacing" 10
         "x" 65 "y" 180
         "font" $font
+        "encoding" "UTF-8"
     }}
 
     {{ $filters := slice (images.Text $textTitle $textTitleOptions) }}
@@ -49,6 +50,7 @@
             "lineSpacing" 10
             "x" 65 "y" (add 290 $descPadding)
             "font" $font
+            "encoding" "UTF-8"
         }}
         {{ $descFilter := (images.Text $textDesc $textDescOptions) }}
         {{ $filters = $filters | append $descFilter }}
@@ -62,6 +64,7 @@
             "lineSpacing" 10
             "x" 65 "y" 550
             "font" $font
+            "encoding" "UTF-8"
         }}
         {{ $siteTitleFilter := (images.Text $textSiteTitle $textSiteTitleOptions)}}
         {{ $filters = $filters | append $siteTitleFilter }}
